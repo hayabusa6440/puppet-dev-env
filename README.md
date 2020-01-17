@@ -7,7 +7,6 @@ Before cloning this repo, you'll have to install both [Vagrant](https://www.vagr
 Once both are installed, you'll be able to do the following steps from your CLI:
 
 ```
-
 **vagrant up each vm separately, wait for the previous vm to load fully before bringing up the next one**
 
 'vagrant up /puppet_master/'
