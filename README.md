@@ -35,4 +35,6 @@ Once both are installed, you'll be able to do the following steps from your CLI:
 
 In order to get into your boxes, you can either ssh in from your command line, or you can use the VirtualBox interface. You can read more on Vagrant commands in their [docs](https://www.vagrantup.com/docs/cli/).
 
-You can also see your console in the browser by going to 'https://192.168.50.4'. This should give you a view of the GUI for continued management of your nodes. user:password is admin:puppetlabs
+You can also see your console in the browser by going to 'https://192.168.50.4'. This should give you a view of the GUI for continued management of your nodes. 
+
+user:password is admin:puppetlabs
