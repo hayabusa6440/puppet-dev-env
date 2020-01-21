@@ -48,4 +48,4 @@ jobs:
                 repository: 192.168.33.7:5000/ubun64
                 insecure_registries: [ "192.168.33.7:5000" ]
           run:
-            path: ./project/derp.sh
+            path: ./git-repo-master/project/git_merge.sh
