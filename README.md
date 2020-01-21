@@ -8,7 +8,7 @@ Once both are installed, you'll be able to do the following steps from your CLI:
 
 ```
 
-**vagrant up each vm separately, wait for the previous vm to load fully before bringing up the next one**
+**Wait for the previous vm to load fully before bringing up the next one**
 
 'vagrant up /puppet_master/'
 
@@ -42,3 +42,5 @@ In order to get into your boxes, you can either ssh in from your command line, o
 You can also see your console in the browser by going to 'https://192.168.50.4'. This should give you a view of the GUI for continued management of your nodes. 
 
 user:password = admin:puppetlabs
+
+Enjoy!!!
