@@ -26,6 +26,7 @@ Once both are installed, you'll be able to do the following steps from your CLI:
 
 ```
  ****Some useful commands**** 
+
 1. *vagrant halt /vm_name/*
 - stops the specified vagrant machine
 
