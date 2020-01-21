@@ -29,7 +29,7 @@ jobs:
                 repository: 192.168.33.7:5000/ubun64
                 insecure_registries: [ "192.168.33.7:5000" ]
           run:
-            path: ./git-repo-develop/git_changes.sh
+            path: ./git-repo-develop/project/git_changes.sh
 
   - name: git-merge-master
     public: true
