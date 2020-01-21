@@ -40,4 +40,4 @@ In order to get into your boxes, you can either ssh in from your command line, o
 
 You can also see your console in the browser by going to 'https://192.168.50.4'. This should give you a view of the GUI for continued management of your nodes. 
 
-user:password is admin:puppetlabs
+user:password = admin:puppetlabs
