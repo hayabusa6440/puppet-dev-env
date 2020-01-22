@@ -1,5 +1,6 @@
 #! /bin/bash
 
+cd git-repo-develop/
 branch=$(git show :/^Merge | egrep -i merge | grep -i / | sed 's/.*\///')
 last_merge=$(git show :/^Merge | grep commit | sed 's/commit //')
 last_commit=$(git show | grep commit | sed 's/commit //')
