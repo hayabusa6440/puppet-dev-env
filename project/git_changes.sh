@@ -1,4 +1,4 @@
 #! /bin/bash
 
-directory=$(cd git-repo-develop/project)
-$directory && git show
+directory=$(git-repo-develop/project)
+cd $directory && git show
