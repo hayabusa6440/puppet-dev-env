@@ -18,7 +18,7 @@ jobs:
     plan:
       - get: git-repo-develop
         trigger: true
-      - task: show-readme
+      - task: show-dev-changes
         config:
           inputs:
             - name: git-repo-develop
