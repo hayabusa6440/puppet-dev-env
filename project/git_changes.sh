@@ -1,5 +1,5 @@
 #! /bin/bash
-TERM=xterm
+export TERM=xterm
 
 cd git-repo-develop/project
 git show
