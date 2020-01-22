@@ -1,0 +1,50 @@
+---
+resources:
+  - name: git-repo-develop
+    type: git
+    source:
+      uri: https://github.com/hayabusa6440/puppet-dev-env.git
+      branch: develop
+
+  - name: git-repo-master
+    type: git
+    source:
+      uri: https://github.com/hayabusa6440/puppet-dev-env.git
+      branch: master
+
+jobs:
+  - name: git-changes
+    public: true
+    plan:
+      - get: git-repo-develop
+        trigger: true
+      - task: show-readme
+        config:
+          inputs:
+            - name: git-repo-develop
+          platform: linux
+          image_resource:
+            type: docker-image
+            source:
+                repository: 192.168.33.7:5000/ubun64
+                insecure_registries: [ "192.168.33.7:5000" ]
+          run:
+            path: ./git-repo-develop/project/git_changes.sh
+
+  - name: git-merge-master
+    public: true
+    plan:
+      - get: git-repo-master
+        trigger: true
+      - task: master-status
+        config:
+          inputs:
+            - name: git-repo-master
+          platform: linux
+          image_resource:
+            type: docker-image
+            source:
+                repository: 192.168.33.7:5000/ubun64
+                insecure_registries: [ "192.168.33.7:5000" ]
+          run:
+            path: ./git-repo-master/project/git_merge.sh
